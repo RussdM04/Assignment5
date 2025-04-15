@@ -1,0 +1,925 @@
+2025-04-12T14:07:07.689-04:00  INFO 11728 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 11728 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T14:07:07.707-04:00 DEBUG 11728 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T14:07:07.708-04:00  INFO 11728 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T14:07:07.758-04:00  INFO 11728 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T14:07:07.758-04:00  INFO 11728 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T14:07:08.398-04:00  INFO 11728 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T14:07:08.439-04:00  INFO 11728 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2025-04-12T14:07:09.679-04:00  INFO 11728 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T14:07:09.695-04:00  INFO 11728 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T14:07:09.695-04:00  INFO 11728 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T14:07:09.748-04:00  INFO 11728 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T14:07:09.749-04:00  INFO 11728 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1990 ms
+2025-04-12T14:07:10.155-04:00  INFO 11728 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T14:07:10.208-04:00  INFO 11728 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T14:07:10.239-04:00  INFO 11728 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T14:07:10.436-04:00  INFO 11728 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T14:07:10.460-04:00  INFO 11728 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T14:07:10.789-04:00  INFO 11728 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@781636a6
+2025-04-12T14:07:10.792-04:00  INFO 11728 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T14:07:10.861-04:00  WARN 11728 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T14:07:11.627-04:00  INFO 11728 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T14:07:11.831-04:00  INFO 11728 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T14:07:12.290-04:00  INFO 11728 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T14:07:13.059-04:00  WARN 11728 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T14:07:14.044-04:00  INFO 11728 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T14:07:14.056-04:00  INFO 11728 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T14:07:14.141-04:00  INFO 11728 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T14:07:14.155-04:00  INFO 11728 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.811 seconds (process running for 7.279)
+2025-04-12T14:07:14.224-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T14:07:14.224-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T14:07:14.225-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T14:07:14.269-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:07:14.270-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:07:14.338-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:07:14.339-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:07:14.345-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:07:14.345-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:07:14.350-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:07:14.350-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:07:14.728-04:00  WARN 11728 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:07:45.810-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:07:45.812-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:07:45.815-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:07:45.816-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:07:45.820-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:07:45.822-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:07:45.831-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:07:45.832-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-3] com.a5.controller.EnrollmentController   : Number of students: 0
+2025-04-12T14:07:45.832-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-3] com.a5.controller.EnrollmentController   : Number of enrollments: 0
+2025-04-12T14:07:45.832-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:07:45.872-04:00  WARN 11728 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:07:47.039-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:07:47.040-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:07:47.043-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:07:47.043-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:07:47.062-04:00  WARN 11728 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:07:47.880-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T14:07:47.881-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:07:47.885-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:07:47.886-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T14:07:47.911-04:00  WARN 11728 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:07:48.697-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:07:48.697-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:07:48.700-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:07:48.700-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:07:48.703-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:07:48.704-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:07:48.706-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:07:48.706-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:07:48.729-04:00  WARN 11728 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:07:49.895-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T14:07:49.896-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:07:49.899-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:07:49.901-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T14:07:49.925-04:00  WARN 11728 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:07:50.549-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:07:50.551-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:07:50.554-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:07:50.554-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:07:50.576-04:00  WARN 11728 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:07:51.382-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T14:07:51.384-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:07:51.387-04:00 DEBUG 11728 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:07:51.388-04:00  INFO 11728 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T14:07:51.429-04:00  WARN 11728 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:10:07.255-04:00  INFO 308 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 308 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T14:10:07.257-04:00 DEBUG 308 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T14:10:07.258-04:00  INFO 308 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T14:10:07.316-04:00  INFO 308 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T14:10:07.317-04:00  INFO 308 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T14:10:07.871-04:00  INFO 308 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T14:10:07.925-04:00  INFO 308 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-04-12T14:10:09.150-04:00  INFO 308 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T14:10:09.163-04:00  INFO 308 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T14:10:09.164-04:00  INFO 308 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T14:10:09.218-04:00  INFO 308 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T14:10:09.219-04:00  INFO 308 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1901 ms
+2025-04-12T14:10:09.628-04:00  INFO 308 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T14:10:09.678-04:00  INFO 308 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T14:10:09.712-04:00  INFO 308 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T14:10:09.926-04:00  INFO 308 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T14:10:09.960-04:00  INFO 308 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T14:10:10.257-04:00  INFO 308 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54484a49
+2025-04-12T14:10:10.260-04:00  INFO 308 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T14:10:10.308-04:00  WARN 308 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T14:10:11.112-04:00  INFO 308 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T14:10:11.168-04:00  INFO 308 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T14:10:11.623-04:00  INFO 308 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T14:10:12.361-04:00  WARN 308 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T14:10:13.303-04:00  INFO 308 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T14:10:13.317-04:00  INFO 308 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T14:10:13.399-04:00  INFO 308 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T14:10:13.413-04:00  INFO 308 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.505 seconds (process running for 6.897)
+2025-04-12T14:10:51.075-04:00  INFO 308 --- [a5] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T14:10:51.076-04:00  INFO 308 --- [a5] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T14:10:51.077-04:00  INFO 308 --- [a5] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T14:10:51.109-04:00  INFO 308 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:10:51.119-04:00 DEBUG 308 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:10:51.178-04:00 DEBUG 308 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:10:51.181-04:00  INFO 308 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:10:51.462-04:00  WARN 308 --- [a5] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:10:52.807-04:00  INFO 308 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:10:52.807-04:00 DEBUG 308 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:10:52.812-04:00 DEBUG 308 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:10:52.813-04:00 DEBUG 308 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:10:52.816-04:00 DEBUG 308 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:10:52.816-04:00 DEBUG 308 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:10:52.818-04:00 DEBUG 308 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:10:52.819-04:00  INFO 308 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:10:52.921-04:00  WARN 308 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:15:49.785-04:00  INFO 14816 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 14816 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T14:15:49.786-04:00 DEBUG 14816 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T14:15:49.787-04:00  INFO 14816 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T14:15:49.839-04:00  INFO 14816 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T14:15:49.840-04:00  INFO 14816 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T14:15:50.465-04:00  INFO 14816 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T14:15:50.506-04:00  INFO 14816 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2025-04-12T14:15:51.699-04:00  INFO 14816 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T14:15:51.712-04:00  INFO 14816 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T14:15:51.712-04:00  INFO 14816 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T14:15:51.768-04:00  INFO 14816 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T14:15:51.769-04:00  INFO 14816 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1928 ms
+2025-04-12T14:15:52.148-04:00  INFO 14816 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T14:15:52.197-04:00  INFO 14816 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T14:15:52.226-04:00  INFO 14816 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T14:15:52.423-04:00  INFO 14816 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T14:15:52.450-04:00  INFO 14816 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T14:15:52.721-04:00  INFO 14816 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3756b22e
+2025-04-12T14:15:52.723-04:00  INFO 14816 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T14:15:52.769-04:00  WARN 14816 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T14:15:53.546-04:00  INFO 14816 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T14:15:53.600-04:00  INFO 14816 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T14:15:54.034-04:00  INFO 14816 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T14:15:54.769-04:00  WARN 14816 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T14:15:55.752-04:00  INFO 14816 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T14:15:55.765-04:00  INFO 14816 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T14:15:55.855-04:00  INFO 14816 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T14:15:55.868-04:00  INFO 14816 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.426 seconds (process running for 6.817)
+2025-04-12T14:16:00.033-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T14:16:00.034-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T14:16:00.035-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T14:16:00.078-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:16:00.079-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:16:00.141-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:16:00.141-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:16:00.147-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:16:00.148-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:16:00.575-04:00  WARN 14816 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:16:11.852-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T14:16:11.854-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:16:11.857-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:16:11.859-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T14:16:11.892-04:00  WARN 14816 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:16:12.852-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:16:12.854-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:16:12.857-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:16:12.858-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:16:12.891-04:00  WARN 14816 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:16:13.340-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:16:13.341-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:16:13.344-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:16:13.345-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:16:13.347-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:16:13.349-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:16:13.355-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:16:13.356-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:16:13.387-04:00  WARN 14816 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:16:25.219-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:16:25.220-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:16:25.223-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:16:25.224-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:16:25.256-04:00  WARN 14816 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:16:25.683-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:16:25.685-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:16:25.688-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:16:25.689-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:16:25.691-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:16:25.693-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:16:25.695-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:16:25.696-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:16:25.724-04:00  WARN 14816 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:16:54.485-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:16:54.488-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:16:54.491-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:16:54.492-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:16:54.495-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:16:54.496-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:16:54.499-04:00 DEBUG 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:16:54.500-04:00  INFO 14816 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:16:54.521-04:00  WARN 14816 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:20.440-04:00  INFO 9564 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 9564 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T14:20:20.442-04:00 DEBUG 9564 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T14:20:20.443-04:00  INFO 9564 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T14:20:20.493-04:00  INFO 9564 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T14:20:20.494-04:00  INFO 9564 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T14:20:21.046-04:00  INFO 9564 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T14:20:21.088-04:00  INFO 9564 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2025-04-12T14:20:22.241-04:00  INFO 9564 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T14:20:22.252-04:00  INFO 9564 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T14:20:22.253-04:00  INFO 9564 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T14:20:22.304-04:00  INFO 9564 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T14:20:22.304-04:00  INFO 9564 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1809 ms
+2025-04-12T14:20:22.686-04:00  INFO 9564 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T14:20:22.736-04:00  INFO 9564 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T14:20:22.765-04:00  INFO 9564 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T14:20:22.964-04:00  INFO 9564 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T14:20:22.987-04:00  INFO 9564 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T14:20:23.266-04:00  INFO 9564 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fa236f6
+2025-04-12T14:20:23.268-04:00  INFO 9564 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T14:20:23.315-04:00  WARN 9564 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T14:20:24.069-04:00  INFO 9564 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T14:20:24.124-04:00  INFO 9564 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T14:20:24.552-04:00  INFO 9564 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T14:20:25.309-04:00  WARN 9564 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T14:20:26.267-04:00  INFO 9564 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T14:20:26.282-04:00  INFO 9564 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T14:20:26.383-04:00  INFO 9564 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T14:20:26.397-04:00  INFO 9564 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.303 seconds (process running for 6.699)
+2025-04-12T14:20:31.443-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T14:20:31.444-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T14:20:31.445-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T14:20:31.483-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:20:31.483-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:20:31.541-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:20:31.542-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:20:31.547-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:20:31.548-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:20:31.904-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:36.046-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T14:20:36.048-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:20:36.051-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:20:36.053-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T14:20:36.084-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:37.645-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:20:37.647-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:20:37.649-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:20:37.650-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:20:37.684-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:38.389-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:20:38.390-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:20:38.393-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:20:38.395-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:20:38.398-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:20:38.399-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:20:38.405-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:20:38.406-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:20:38.456-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:42.318-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:20:42.318-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:20:42.321-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:20:42.321-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:20:42.324-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:20:42.324-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:20:42.364-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:43.939-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T14:20:43.940-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T14:20:43.979-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:55.481-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method createStudent of class StudentController
+2025-04-12T14:20:55.481-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method existsByEmail of class StudentService
+2025-04-12T14:20:55.503-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method existsByEmail of class StudentService
+2025-04-12T14:20:55.503-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method saveStudent of class StudentService
+2025-04-12T14:20:55.541-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method saveStudent of class StudentService
+2025-04-12T14:20:55.553-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method createStudent of class StudentController with result: redirect:/students
+2025-04-12T14:20:55.569-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T14:20:55.570-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:20:55.578-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:20:55.579-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T14:20:55.617-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:57.324-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:20:57.325-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:20:57.328-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:20:57.329-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:20:57.357-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:20:59.579-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class CourseController
+2025-04-12T14:20:59.580-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class CourseController with result: courses/form
+2025-04-12T14:20:59.620-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:21:30.084-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering method createCourse of class CourseController
+2025-04-12T14:21:30.085-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method existsByName of class CourseService
+2025-04-12T14:21:30.089-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting service method existsByName of class CourseService
+2025-04-12T14:21:30.090-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method saveCourse of class CourseService
+2025-04-12T14:21:30.094-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting service method saveCourse of class CourseService
+2025-04-12T14:21:30.097-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting method createCourse of class CourseController with result: redirect:/courses
+2025-04-12T14:21:30.101-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:21:30.102-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:21:30.105-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:21:30.106-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:21:30.131-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:21:31.530-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method showEditForm of class CourseController
+2025-04-12T14:21:31.531-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getCourseById of class CourseService
+2025-04-12T14:21:31.539-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getCourseById of class CourseService
+2025-04-12T14:21:31.541-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method showEditForm of class CourseController with result: courses/form
+2025-04-12T14:21:31.580-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:21:32.599-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method updateCourse of class CourseController
+2025-04-12T14:21:32.600-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method saveCourse of class CourseService
+2025-04-12T14:21:32.605-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method saveCourse of class CourseService
+2025-04-12T14:21:32.608-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method updateCourse of class CourseController with result: redirect:/courses
+2025-04-12T14:21:32.612-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:21:32.614-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:21:32.616-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:21:32.617-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:21:32.646-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:21:34.249-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:21:34.251-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:21:34.254-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:21:34.256-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:21:34.260-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:21:34.261-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:34.264-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:34.265-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:21:34.297-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:21:38.266-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering method enrollStudent of class EnrollmentController
+2025-04-12T14:21:38.266-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-10] com.a5.controller.EnrollmentController   : Enrolling student 1 in course 1
+2025-04-12T14:21:38.268-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method enrollStudent of class EnrollmentService
+2025-04-12T14:21:38.283-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting service method enrollStudent of class EnrollmentService
+2025-04-12T14:21:38.287-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting method enrollStudent of class EnrollmentController with result: redirect:/enrollments
+2025-04-12T14:21:38.306-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:21:38.307-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:21:38.311-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:21:38.313-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:21:38.315-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:21:38.316-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:38.319-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:38.319-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:21:38.374-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:21:44.898-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method unenrollStudent of class EnrollmentController
+2025-04-12T14:21:44.899-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.controller.EnrollmentController   : Unenrolling student 1 from course 1
+2025-04-12T14:21:44.900-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method unenrollStudent of class EnrollmentService
+2025-04-12T14:21:44.915-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method unenrollStudent of class EnrollmentService
+2025-04-12T14:21:44.922-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method unenrollStudent of class EnrollmentController with result: redirect:/enrollments
+2025-04-12T14:21:44.928-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:21:44.929-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:21:44.932-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:21:44.933-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:21:44.935-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:21:44.936-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:44.939-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:44.939-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:21:44.980-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:21:51.214-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method enrollStudent of class EnrollmentController
+2025-04-12T14:21:51.214-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-7] com.a5.controller.EnrollmentController   : Enrolling student 1 in course 1
+2025-04-12T14:21:51.215-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method enrollStudent of class EnrollmentService
+2025-04-12T14:21:51.225-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method enrollStudent of class EnrollmentService
+2025-04-12T14:21:51.229-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method enrollStudent of class EnrollmentController with result: redirect:/enrollments
+2025-04-12T14:21:51.233-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:21:51.234-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:21:51.237-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:21:51.237-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:21:51.239-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:21:51.241-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:51.244-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:51.245-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:21:51.268-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:21:53.897-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method enrollStudent of class EnrollmentController
+2025-04-12T14:21:53.898-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-9] com.a5.controller.EnrollmentController   : Enrolling student 1 in course 1
+2025-04-12T14:21:53.899-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method enrollStudent of class EnrollmentService
+2025-04-12T14:21:53.903-04:00 ERROR 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Service exception in method enrollStudent of class EnrollmentService: Student is already enrolled in this course
+2025-04-12T14:21:53.905-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method enrollStudent of class EnrollmentController with result: redirect:/enrollments
+2025-04-12T14:21:53.910-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:21:53.912-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:21:53.914-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:21:53.915-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:21:53.918-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:21:53.919-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:53.921-04:00 DEBUG 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:21:53.921-04:00  INFO 9564 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:21:53.943-04:00  WARN 9564 --- [a5] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:43:20.333-04:00  INFO 11476 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 11476 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T14:43:20.335-04:00 DEBUG 11476 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T14:43:20.336-04:00  INFO 11476 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T14:43:20.387-04:00  INFO 11476 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T14:43:20.388-04:00  INFO 11476 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T14:43:20.931-04:00  INFO 11476 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T14:43:20.975-04:00  INFO 11476 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2025-04-12T14:43:22.099-04:00  INFO 11476 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T14:43:22.115-04:00  INFO 11476 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T14:43:22.115-04:00  INFO 11476 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T14:43:22.164-04:00  INFO 11476 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T14:43:22.165-04:00  INFO 11476 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1777 ms
+2025-04-12T14:43:22.569-04:00  INFO 11476 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T14:43:22.620-04:00  INFO 11476 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T14:43:22.653-04:00  INFO 11476 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T14:43:22.848-04:00  INFO 11476 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T14:43:22.871-04:00  INFO 11476 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T14:43:23.145-04:00  INFO 11476 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fa236f6
+2025-04-12T14:43:23.147-04:00  INFO 11476 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T14:43:23.190-04:00  WARN 11476 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T14:43:24.001-04:00  INFO 11476 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T14:43:24.068-04:00  INFO 11476 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T14:43:24.499-04:00  INFO 11476 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T14:43:25.211-04:00  WARN 11476 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T14:43:26.192-04:00  INFO 11476 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T14:43:26.207-04:00  INFO 11476 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T14:43:26.295-04:00  INFO 11476 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T14:43:26.307-04:00  INFO 11476 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.311 seconds (process running for 6.695)
+2025-04-12T14:43:30.649-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T14:43:30.650-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T14:43:30.650-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-12T14:43:30.687-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:43:30.687-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:43:30.761-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:43:30.762-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:43:30.767-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:43:30.768-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:43:31.132-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:43:35.912-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:43:35.912-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:43:35.916-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:43:35.917-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:43:35.920-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:43:35.920-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:43:35.954-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:43:36.648-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T14:43:36.650-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:43:36.653-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:43:36.655-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T14:43:36.685-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:43:37.432-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:43:37.433-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:43:37.442-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:43:37.443-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:43:37.471-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:43:38.807-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:43:38.808-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:43:38.811-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:43:38.812-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:43:38.814-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:43:38.815-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:43:38.822-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:43:38.824-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:43:38.855-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:43:41.569-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:43:41.571-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:43:41.576-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:43:41.577-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:43:41.598-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:43:46.110-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class CourseController
+2025-04-12T14:43:46.111-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class CourseController with result: courses/form
+2025-04-12T14:43:46.144-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:45:08.362-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering method createCourse of class CourseController
+2025-04-12T14:45:08.363-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method existsByName of class CourseService
+2025-04-12T14:45:08.381-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method existsByName of class CourseService
+2025-04-12T14:45:08.382-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method saveCourse of class CourseService
+2025-04-12T14:45:08.410-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method saveCourse of class CourseService
+2025-04-12T14:45:08.422-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting method createCourse of class CourseController with result: redirect:/courses
+2025-04-12T14:45:08.439-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T14:45:08.440-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:45:08.447-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:45:08.448-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T14:45:08.493-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:45:14.546-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:45:14.548-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:45:14.551-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:45:14.553-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:45:14.556-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:45:14.558-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:45:14.560-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:45:14.561-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:45:14.594-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:45:18.940-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method enrollStudent of class EnrollmentController
+2025-04-12T14:45:18.940-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] com.a5.controller.EnrollmentController   : Enrolling student 1 in course 2
+2025-04-12T14:45:18.941-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method enrollStudent of class EnrollmentService
+2025-04-12T14:45:18.961-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method enrollStudent of class EnrollmentService
+2025-04-12T14:45:18.965-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method enrollStudent of class EnrollmentController with result: redirect:/enrollments
+2025-04-12T14:45:18.986-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T14:45:18.987-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:45:18.990-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:45:18.991-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:45:18.993-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:45:18.995-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:45:18.997-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T14:45:18.999-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T14:45:19.027-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T14:45:22.562-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T14:45:22.563-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T14:45:22.566-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T14:45:22.566-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T14:45:22.569-04:00 DEBUG 11476 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T14:45:22.570-04:00  INFO 11476 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T14:45:22.610-04:00  WARN 11476 --- [a5] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:08:17.855-04:00  INFO 5068 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 5068 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T15:08:17.857-04:00 DEBUG 5068 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T15:08:17.857-04:00  INFO 5068 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T15:08:17.906-04:00  INFO 5068 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T15:08:17.906-04:00  INFO 5068 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T15:08:18.470-04:00  INFO 5068 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T15:08:18.512-04:00  INFO 5068 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2025-04-12T15:08:19.652-04:00  INFO 5068 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T15:08:19.663-04:00  INFO 5068 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T15:08:19.663-04:00  INFO 5068 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T15:08:19.713-04:00  INFO 5068 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T15:08:19.713-04:00  INFO 5068 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1806 ms
+2025-04-12T15:08:20.128-04:00  INFO 5068 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T15:08:20.182-04:00  INFO 5068 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T15:08:20.213-04:00  INFO 5068 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T15:08:20.417-04:00  INFO 5068 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T15:08:20.439-04:00  INFO 5068 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T15:08:20.720-04:00  INFO 5068 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6afdb5
+2025-04-12T15:08:20.722-04:00  INFO 5068 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T15:08:20.763-04:00  WARN 5068 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T15:08:21.506-04:00  INFO 5068 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T15:08:21.559-04:00  INFO 5068 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T15:08:21.987-04:00  INFO 5068 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T15:08:22.806-04:00  WARN 5068 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T15:08:23.881-04:00  INFO 5068 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T15:08:23.897-04:00  INFO 5068 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T15:08:24.002-04:00  INFO 5068 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T15:08:24.016-04:00  INFO 5068 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.491 seconds (process running for 6.879)
+2025-04-12T15:09:10.613-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T15:09:10.613-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T15:09:10.614-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T15:09:10.651-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T15:09:10.652-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:09:10.720-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:09:10.721-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:09:10.728-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:09:10.729-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T15:09:11.148-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:09:34.034-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T15:09:34.035-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T15:09:34.085-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:09:34.874-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T15:09:34.876-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:09:34.885-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:09:34.886-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T15:09:34.923-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:09:35.269-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T15:09:35.270-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:09:35.273-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:09:35.275-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:09:35.277-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:09:35.279-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T15:09:35.286-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T15:09:35.287-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T15:09:35.322-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:09:38.265-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:09:38.267-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:09:38.271-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:09:38.272-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:09:38.300-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:09:39.546-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T15:09:39.546-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T15:09:39.568-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:10:00.710-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method createStudent of class StudentController
+2025-04-12T15:10:00.711-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method existsByEmail of class StudentService
+2025-04-12T15:10:00.730-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method existsByEmail of class StudentService
+2025-04-12T15:10:00.731-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method saveStudent of class StudentService
+2025-04-12T15:10:00.764-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method saveStudent of class StudentService
+2025-04-12T15:10:00.776-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method sendWelcomeEmail of class MailService
+2025-04-12T15:10:01.484-04:00 ERROR 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Service exception in method sendWelcomeEmail of class MailService: Authentication failed
+2025-04-12T15:10:01.485-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method createStudent of class StudentController with result: redirect:/students
+2025-04-12T15:10:01.501-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:10:01.503-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:10:01.507-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:10:01.508-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:10:01.542-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:10:16.063-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering method listEnrollments of class EnrollmentController
+2025-04-12T15:10:16.064-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:10:16.067-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:10:16.069-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:10:16.072-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:10:16.074-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllEnrollments of class EnrollmentService
+2025-04-12T15:10:16.077-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllEnrollments of class EnrollmentService
+2025-04-12T15:10:16.078-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting method listEnrollments of class EnrollmentController with result: enrollments/list
+2025-04-12T15:10:16.111-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:10:16.687-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T15:10:16.688-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:10:16.693-04:00 DEBUG 5068 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:10:16.694-04:00  INFO 5068 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T15:10:16.719-04:00  WARN 5068 --- [a5] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:18:37.898-04:00  INFO 9540 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 9540 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T15:18:37.900-04:00 DEBUG 9540 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T15:18:37.901-04:00  INFO 9540 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T15:18:37.953-04:00  INFO 9540 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T15:18:37.954-04:00  INFO 9540 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T15:18:38.508-04:00  INFO 9540 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T15:18:38.552-04:00  INFO 9540 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2025-04-12T15:18:39.698-04:00  INFO 9540 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T15:18:39.710-04:00  INFO 9540 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T15:18:39.710-04:00  INFO 9540 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T15:18:39.757-04:00  INFO 9540 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T15:18:39.758-04:00  INFO 9540 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1803 ms
+2025-04-12T15:18:40.168-04:00  INFO 9540 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T15:18:40.222-04:00  INFO 9540 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T15:18:40.252-04:00  INFO 9540 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T15:18:40.443-04:00  INFO 9540 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T15:18:40.471-04:00  INFO 9540 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T15:18:40.744-04:00  INFO 9540 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e1a2597
+2025-04-12T15:18:40.745-04:00  INFO 9540 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T15:18:40.788-04:00  WARN 9540 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T15:18:41.537-04:00  INFO 9540 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T15:18:41.588-04:00  INFO 9540 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T15:18:42.023-04:00  INFO 9540 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T15:18:42.789-04:00  WARN 9540 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T15:18:43.750-04:00  INFO 9540 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T15:18:43.766-04:00  INFO 9540 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T15:18:43.851-04:00  INFO 9540 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T15:18:43.864-04:00  INFO 9540 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.305 seconds (process running for 6.694)
+2025-04-12T15:18:52.008-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T15:18:52.009-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T15:18:52.010-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T15:18:52.042-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:18:52.048-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:18:52.121-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:18:52.124-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:18:52.470-04:00  WARN 9540 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:18:54.507-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method deleteStudent of class StudentController
+2025-04-12T15:18:54.508-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method deleteStudent of class StudentService
+2025-04-12T15:18:54.533-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method deleteStudent of class StudentService
+2025-04-12T15:18:54.560-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method deleteStudent of class StudentController with result: redirect:/students
+2025-04-12T15:18:54.576-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:18:54.577-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:18:54.582-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:18:54.583-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:18:54.613-04:00  WARN 9540 --- [a5] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:18:55.651-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T15:18:55.652-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:18:55.655-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:18:55.656-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:18:55.661-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:18:55.661-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T15:18:55.740-04:00  WARN 9540 --- [a5] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:18:57.530-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T15:18:57.530-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T15:18:57.570-04:00  WARN 9540 --- [a5] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:19:09.060-04:00  INFO 9540 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering method createStudent of class StudentController
+2025-04-12T15:19:09.060-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method existsByEmail of class StudentService
+2025-04-12T15:19:09.082-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting service method existsByEmail of class StudentService
+2025-04-12T15:19:09.083-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method saveStudent of class StudentService
+2025-04-12T15:19:09.098-04:00 DEBUG 9540 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method sendStudentRegistrationEmail of class MailService
+2025-04-12T15:19:09.807-04:00 ERROR 9540 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Service exception in method sendStudentRegistrationEmail of class MailService: Authentication failed
+2025-04-12T15:19:09.808-04:00 ERROR 9540 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Service exception in method saveStudent of class StudentService: Authentication failed
+2025-04-12T15:19:09.811-04:00 ERROR 9540 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exception in method createStudent of class StudentController: Authentication failed
+2025-04-12T15:19:09.813-04:00  WARN 9540 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.mail.MailAuthenticationException: Authentication failed]
+2025-04-12T15:19:09.832-04:00  WARN 9540 --- [a5] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:12.331-04:00  INFO 9252 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 9252 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T15:26:12.332-04:00 DEBUG 9252 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T15:26:12.333-04:00  INFO 9252 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T15:26:12.387-04:00  INFO 9252 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T15:26:12.388-04:00  INFO 9252 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T15:26:12.960-04:00  INFO 9252 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T15:26:12.999-04:00  INFO 9252 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2025-04-12T15:26:14.123-04:00  INFO 9252 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T15:26:14.134-04:00  INFO 9252 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T15:26:14.135-04:00  INFO 9252 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T15:26:14.195-04:00  INFO 9252 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T15:26:14.199-04:00  INFO 9252 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1811 ms
+2025-04-12T15:26:14.593-04:00  INFO 9252 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T15:26:14.648-04:00  INFO 9252 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T15:26:14.679-04:00  INFO 9252 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T15:26:14.876-04:00  INFO 9252 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T15:26:14.898-04:00  INFO 9252 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T15:26:15.179-04:00  INFO 9252 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32c65d30
+2025-04-12T15:26:15.181-04:00  INFO 9252 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T15:26:15.235-04:00  WARN 9252 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T15:26:15.991-04:00  INFO 9252 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T15:26:16.042-04:00  INFO 9252 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T15:26:16.464-04:00  INFO 9252 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T15:26:17.236-04:00  WARN 9252 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T15:26:18.202-04:00  INFO 9252 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T15:26:18.217-04:00  INFO 9252 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T15:26:18.303-04:00  INFO 9252 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T15:26:18.315-04:00  INFO 9252 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.335 seconds (process running for 6.732)
+2025-04-12T15:26:27.420-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T15:26:27.420-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T15:26:27.422-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T15:26:27.458-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T15:26:27.459-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:26:27.536-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:26:27.537-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:26:27.544-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:26:27.546-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T15:26:27.969-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:29.899-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T15:26:29.899-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T15:26:29.945-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:32.802-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T15:26:32.802-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:26:32.806-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:26:32.806-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:26:32.809-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:26:32.810-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T15:26:32.852-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:33.321-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:26:33.323-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:26:33.327-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:26:33.328-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:26:33.360-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:34.377-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T15:26:34.377-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T15:26:34.400-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:36.488-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:26:36.490-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:26:36.493-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:26:36.494-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:26:36.519-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:37.825-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T15:26:37.825-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T15:26:37.848-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:42.732-04:00  INFO 9252 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering method createStudent of class StudentController
+2025-04-12T15:26:42.732-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method existsByEmail of class StudentService
+2025-04-12T15:26:42.752-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method existsByEmail of class StudentService
+2025-04-12T15:26:42.753-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method saveStudent of class StudentService
+2025-04-12T15:26:42.779-04:00 DEBUG 9252 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method sendStudentRegistrationEmail of class MailService
+2025-04-12T15:26:43.387-04:00 ERROR 9252 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Service exception in method sendStudentRegistrationEmail of class MailService: Authentication failed
+2025-04-12T15:26:43.387-04:00 ERROR 9252 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Service exception in method saveStudent of class StudentService: Authentication failed
+2025-04-12T15:26:43.390-04:00 ERROR 9252 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exception in method createStudent of class StudentController: Authentication failed
+2025-04-12T15:26:43.392-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.mail.MailAuthenticationException: Authentication failed]
+2025-04-12T15:26:43.413-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:26:47.707-04:00  WARN 9252 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:28:08.467-04:00  INFO 8092 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 8092 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T15:28:08.469-04:00 DEBUG 8092 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T15:28:08.469-04:00  INFO 8092 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T15:28:08.523-04:00  INFO 8092 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T15:28:08.523-04:00  INFO 8092 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T15:28:09.108-04:00  INFO 8092 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T15:28:09.153-04:00  INFO 8092 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2025-04-12T15:28:10.327-04:00  INFO 8092 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T15:28:10.338-04:00  INFO 8092 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T15:28:10.339-04:00  INFO 8092 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T15:28:10.394-04:00  INFO 8092 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T15:28:10.395-04:00  INFO 8092 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1871 ms
+2025-04-12T15:28:10.798-04:00  INFO 8092 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T15:28:10.848-04:00  INFO 8092 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T15:28:10.877-04:00  INFO 8092 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T15:28:11.079-04:00  INFO 8092 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T15:28:11.104-04:00  INFO 8092 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T15:28:11.385-04:00  INFO 8092 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5043609a
+2025-04-12T15:28:11.387-04:00  INFO 8092 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T15:28:11.433-04:00  WARN 8092 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T15:28:12.202-04:00  INFO 8092 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T15:28:12.255-04:00  INFO 8092 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T15:28:12.688-04:00  INFO 8092 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T15:28:13.486-04:00  WARN 8092 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T15:28:14.488-04:00  INFO 8092 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T15:28:14.502-04:00  INFO 8092 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T15:28:14.591-04:00  INFO 8092 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T15:28:14.614-04:00  INFO 8092 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.486 seconds (process running for 6.879)
+2025-04-12T15:28:32.437-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T15:28:32.438-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T15:28:32.439-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T15:28:32.513-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method createStudent of class StudentController
+2025-04-12T15:28:32.514-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method existsByEmail of class StudentService
+2025-04-12T15:28:32.587-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method existsByEmail of class StudentService
+2025-04-12T15:28:32.595-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method saveStudent of class StudentService
+2025-04-12T15:28:32.631-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method saveStudent of class StudentService
+2025-04-12T15:28:32.647-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method sendStudentRegistrationEmail of class MailService
+2025-04-12T15:28:33.323-04:00 ERROR 8092 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Service exception in method sendStudentRegistrationEmail of class MailService: Authentication failed
+2025-04-12T15:28:33.324-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method createStudent of class StudentController with result: redirect:/students
+2025-04-12T15:28:33.363-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:28:33.366-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:28:33.392-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:28:33.393-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:28:33.717-04:00  WARN 8092 --- [a5] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:28:59.115-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering method showEditForm of class StudentController
+2025-04-12T15:28:59.116-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method getStudentById of class StudentService
+2025-04-12T15:28:59.123-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method getStudentById of class StudentService
+2025-04-12T15:28:59.125-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting method showEditForm of class StudentController with result: students/form
+2025-04-12T15:28:59.186-04:00  WARN 8092 --- [a5] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:29:00.093-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering method updateStudent of class StudentController
+2025-04-12T15:29:00.094-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method saveStudent of class StudentService
+2025-04-12T15:29:00.104-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method saveStudent of class StudentService
+2025-04-12T15:29:00.110-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting method updateStudent of class StudentController with result: redirect:/students
+2025-04-12T15:29:00.114-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:29:00.115-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:29:00.119-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:29:00.121-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:29:00.165-04:00  WARN 8092 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:29:02.251-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T15:29:02.252-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:29:02.256-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:29:02.256-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:29:02.263-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:29:02.264-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T15:29:02.316-04:00  WARN 8092 --- [a5] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:30:07.597-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:30:07.599-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:30:07.602-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:30:07.603-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:30:07.637-04:00  WARN 8092 --- [a5] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:30:10.263-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering method deleteStudent of class StudentController
+2025-04-12T15:30:10.265-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Entering service method deleteStudent of class StudentService
+2025-04-12T15:30:10.275-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting service method deleteStudent of class StudentService
+2025-04-12T15:30:10.283-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-4] com.a5.aspect.LoggingAspect              : Exiting method deleteStudent of class StudentController with result: redirect:/students
+2025-04-12T15:30:10.290-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:30:10.291-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:30:10.295-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:30:10.296-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-5] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:30:10.319-04:00  WARN 8092 --- [a5] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:30:11.333-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T15:30:11.333-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T15:30:11.357-04:00  WARN 8092 --- [a5] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:30:15.724-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering method createStudent of class StudentController
+2025-04-12T15:30:15.725-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method existsByEmail of class StudentService
+2025-04-12T15:30:15.728-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method existsByEmail of class StudentService
+2025-04-12T15:30:15.728-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method saveStudent of class StudentService
+2025-04-12T15:30:15.730-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting service method saveStudent of class StudentService
+2025-04-12T15:30:15.734-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Entering service method sendStudentRegistrationEmail of class MailService
+2025-04-12T15:30:16.319-04:00 ERROR 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Service exception in method sendStudentRegistrationEmail of class MailService: Authentication failed
+2025-04-12T15:30:16.319-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-9] com.a5.aspect.LoggingAspect              : Exiting method createStudent of class StudentController with result: redirect:/students
+2025-04-12T15:30:16.323-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:30:16.325-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:30:16.327-04:00 DEBUG 8092 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:30:16.328-04:00  INFO 8092 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:30:16.352-04:00  WARN 8092 --- [a5] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:38:17.418-04:00  INFO 12016 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 12016 (C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russd in C:\Users\Russd\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-12T15:38:17.419-04:00 DEBUG 12016 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-12T15:38:17.420-04:00  INFO 12016 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T15:38:17.472-04:00  INFO 12016 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-12T15:38:17.473-04:00  INFO 12016 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-12T15:38:18.037-04:00  INFO 12016 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T15:38:18.075-04:00  INFO 12016 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2025-04-12T15:38:19.244-04:00  INFO 12016 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-12T15:38:19.255-04:00  INFO 12016 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T15:38:19.255-04:00  INFO 12016 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-12T15:38:19.311-04:00  INFO 12016 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T15:38:19.312-04:00  INFO 12016 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1839 ms
+2025-04-12T15:38:19.712-04:00  INFO 12016 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T15:38:19.770-04:00  INFO 12016 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-12T15:38:19.800-04:00  INFO 12016 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T15:38:20.004-04:00  INFO 12016 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T15:38:20.029-04:00  INFO 12016 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T15:38:20.305-04:00  INFO 12016 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@87a5c2d
+2025-04-12T15:38:20.307-04:00  INFO 12016 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T15:38:20.357-04:00  WARN 12016 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T15:38:21.142-04:00  INFO 12016 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T15:38:21.195-04:00  INFO 12016 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T15:38:21.670-04:00  INFO 12016 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-12T15:38:22.463-04:00  WARN 12016 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T15:38:23.463-04:00  INFO 12016 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-12T15:38:23.484-04:00  INFO 12016 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-12T15:38:23.580-04:00  INFO 12016 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-12T15:38:23.593-04:00  INFO 12016 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 6.509 seconds (process running for 6.906)
+2025-04-12T15:38:31.561-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T15:38:31.562-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T15:38:31.563-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-12T15:38:31.599-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering method home of class HomeController
+2025-04-12T15:38:31.599-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:38:31.670-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:38:31.671-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:38:31.676-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:38:31.678-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-1] com.a5.aspect.LoggingAspect              : Exiting method home of class HomeController with result: home
+2025-04-12T15:38:32.107-04:00  WARN 12016 --- [a5] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:38:33.994-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method listCourses of class CourseController
+2025-04-12T15:38:33.996-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllCourses of class CourseService
+2025-04-12T15:38:34.000-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllCourses of class CourseService
+2025-04-12T15:38:34.001-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method listCourses of class CourseController with result: courses/list
+2025-04-12T15:38:34.047-04:00  WARN 12016 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:38:34.362-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:38:34.363-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:38:34.366-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:38:34.367-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-6] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:38:34.392-04:00  WARN 12016 --- [a5] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:38:38.039-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering method deleteStudent of class StudentController
+2025-04-12T15:38:38.041-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Entering service method deleteStudent of class StudentService
+2025-04-12T15:38:38.060-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting service method deleteStudent of class StudentService
+2025-04-12T15:38:38.080-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-7] com.a5.aspect.LoggingAspect              : Exiting method deleteStudent of class StudentController with result: redirect:/students
+2025-04-12T15:38:38.096-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:38:38.097-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:38:38.100-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:38:38.102-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-8] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:38:38.129-04:00  WARN 12016 --- [a5] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:38:38.681-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Entering method showCreateForm of class StudentController
+2025-04-12T15:38:38.681-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-10] com.a5.aspect.LoggingAspect              : Exiting method showCreateForm of class StudentController with result: students/form
+2025-04-12T15:38:38.712-04:00  WARN 12016 --- [a5] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-12T15:38:43.743-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering method createStudent of class StudentController
+2025-04-12T15:38:43.743-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method existsByEmail of class StudentService
+2025-04-12T15:38:43.765-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting service method existsByEmail of class StudentService
+2025-04-12T15:38:43.766-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method saveStudent of class StudentService
+2025-04-12T15:38:43.784-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting service method saveStudent of class StudentService
+2025-04-12T15:38:43.792-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Entering service method sendStudentRegistrationEmail of class MailService
+2025-04-12T15:38:44.376-04:00 ERROR 12016 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Service exception in method sendStudentRegistrationEmail of class MailService: Authentication failed
+2025-04-12T15:38:44.377-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-2] com.a5.aspect.LoggingAspect              : Exiting method createStudent of class StudentController with result: redirect:/students
+2025-04-12T15:38:44.382-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering method listStudents of class StudentController
+2025-04-12T15:38:44.384-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Entering service method getAllStudents of class StudentService
+2025-04-12T15:38:44.387-04:00 DEBUG 12016 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting service method getAllStudents of class StudentService
+2025-04-12T15:38:44.388-04:00  INFO 12016 --- [a5] [http-nio-8080-exec-3] com.a5.aspect.LoggingAspect              : Exiting method listStudents of class StudentController with result: students/list
+2025-04-12T15:38:44.414-04:00  WARN 12016 --- [a5] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-15T11:51:31.364-04:00  INFO 8732 --- [a5] [restartedMain] com.a5.A5Application                     : Starting A5Application using Java 21.0.6 with PID 8732 (C:\Users\Russ\OneDrive\Desktop\StudentCourseManagementSystem-main\target\classes started by Russ in C:\Users\Russ\OneDrive\Desktop\StudentCourseManagementSystem-main)
+2025-04-15T11:51:31.369-04:00 DEBUG 8732 --- [a5] [restartedMain] com.a5.A5Application                     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-15T11:51:31.371-04:00  INFO 8732 --- [a5] [restartedMain] com.a5.A5Application                     : No active profile set, falling back to 1 default profile: "default"
+2025-04-15T11:51:31.604-04:00  INFO 8732 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-15T11:51:31.606-04:00  INFO 8732 --- [a5] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-15T11:51:34.129-04:00  INFO 8732 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-15T11:51:34.294-04:00  INFO 8732 --- [a5] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 3 JPA repository interfaces.
+2025-04-15T11:51:40.174-04:00  INFO 8732 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-15T11:51:40.222-04:00  INFO 8732 --- [a5] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-15T11:51:40.227-04:00  INFO 8732 --- [a5] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-15T11:51:40.482-04:00  INFO 8732 --- [a5] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-15T11:51:40.485-04:00  INFO 8732 --- [a5] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8877 ms
+2025-04-15T11:51:42.654-04:00  INFO 8732 --- [a5] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-15T11:51:43.004-04:00  INFO 8732 --- [a5] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-15T11:51:43.214-04:00  INFO 8732 --- [a5] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-15T11:51:44.405-04:00  INFO 8732 --- [a5] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-15T11:51:44.538-04:00  INFO 8732 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-15T11:51:46.071-04:00  INFO 8732 --- [a5] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@de23c6d
+2025-04-15T11:51:46.080-04:00  INFO 8732 --- [a5] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-15T11:51:46.328-04:00  WARN 8732 --- [a5] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-15T11:51:50.918-04:00  INFO 8732 --- [a5] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-15T11:51:51.267-04:00  INFO 8732 --- [a5] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-15T11:51:53.968-04:00  INFO 8732 --- [a5] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-15T11:51:58.883-04:00  WARN 8732 --- [a5] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-15T11:52:04.650-04:00  INFO 8732 --- [a5] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-15T11:52:04.884-04:00  INFO 8732 --- [a5] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2025-04-15T11:52:05.418-04:00  INFO 8732 --- [a5] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-04-15T11:52:05.472-04:00  INFO 8732 --- [a5] [restartedMain] com.a5.A5Application                     : Started A5Application in 36.143 seconds (process running for 38.261)
